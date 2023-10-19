@@ -8,12 +8,12 @@ class CounterView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Bloc Counter App"),
+        title: const Text("Bloc Counter App"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        // crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          //Flutter widget that handles building the widget in response to new state
           BlocBuilder<CounterCubit, int>(
             builder: (context, state) {
               return Text("Counter: $state");

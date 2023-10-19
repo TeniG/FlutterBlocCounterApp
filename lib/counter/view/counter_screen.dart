@@ -9,6 +9,7 @@ class CounterScreen extends StatelessWidget {
    const CounterScreen({super.key});
   @override
   Widget build(BuildContext context) {
+    // Flutter widget which provides a bloc to its children
     return BlocProvider (
       create: (_) => CounterCubit(),
       child: const CounterView(),
